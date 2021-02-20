@@ -44,117 +44,118 @@
         <h2 class="quiz_title">Quiz</h2>
         <div class="quiz-wrapper">
             <p>Check your knowledge by doing this Quiz!</p>
-            <form id="form1">
+            <form name="quizForm" onsubmit="return submitAnswers()">
                 <div class="item-wrapper">
                     <div class="quiz-item">
                         <p>What do unit tests look like?</p>
                         <div class="radio-container">
                             <label for="q1_1">
-                                <input type="radio" name="unit" value="0" id="q1_1"><p>Like a line of code.</p>
+                                <input type="radio" name="q1" value="0" id="q1_1"><p>Like a line of code.</p>
                             </label>
                             <label for="q1_2">
-                                <input type="radio" name="unit" value="0" id="q1_2"><p>Like a method.</p>
+                                <input type="radio" name="q1" value="0" id="q1_2"><p>Like a method.</p>
                             </label>
                             <label for="q1_3">
-                                <input type="radio" name="unit" value="0" id="q1_3"><p>Like a class.</p>
+                                <input type="radio" name="q1" value="0" id="q1_3"><p>Like a class.</p>
                             </label>
                             <label for="q1_4">
-                                <input type="radio" name="unit" value="1" id="q1_4"><p>Can be all of the above.</p>
+                                <input type="radio" name="q1" value="1" id="q1_4"><p>Can be all of the above.</p>
                             </label>
                         </div>
                     </div>
                     <div class="quiz-item">
-                        <p>What do unit tests look like?</p>
+                        <p>What interface testing verifies?</p>
                         <div class="radio-container">
                             <label for="q2_1">
-                                <input type="radio" name="interface" value="0" id="q2_1"><p>Like a line of code.</p>
+                                <input type="radio" name="q2" value="0" id="q2_1"><p>If the computer works correctly.</p>
                             </label>
                             <label for="q2_2">
-                                <input type="radio" name="interface" value="0" id="q2_2"><p>Like a method.</p>
+                                <input type="radio" name="q2" value="1" id="q2_2"><p>Communication between two different software systems.</p>
                             </label>
                             <label for="q2_3">
-                                <input type="radio" name="interface" value="0" id="q2_3"><p>Like a class.</p>
+                                <input type="radio" name="q2" value="0" id="q2_3"><p>If there is any broken hardware.</p>
                             </label>
                             <label for="q2_4">
-                                <input type="radio" name="interface" value="1" id="q2_4"><p>Can be all of the above.</p>
+                                <input type="radio" name="q2" value="0" id="q2_4"><p>Internet speed.</p>
                             </label>
                         </div>
                     </div>
                     <div class="quiz-item">
-                        <p>What do unit tests look like?</p>
+                        <p>Which one is NOT the type of software testing?</p>
                         <div class="radio-container">
                             <label for="q3_1">
-                                <input type="radio" name="system" value="0" id="q3_1"><p>Like a line of code.</p>
+                                <input type="radio" name="q3" value="0" id="q3_1"><p>Manual testing.</p>
                             </label>
                             <label for="q3_2">
-                                <input type="radio" name="system" value="0" id="q3_2"><p>Like a method.</p>
+                                <input type="radio" name="q3" value="0" id="q3_2"><p>Automated testing.</p>
                             </label>
                             <label for="q3_3">
-                                <input type="radio" name="system" value="0" id="q3_3"><p>Like a class.</p>
+                                <input type="radio" name="q3" value="0" id="q3_3"><p>End-to-end testing.</p>
                             </label>
                             <label for="q3_4">
-                                <input type="radio" name="system" value="1" id="q3_4"><p>Can be all of the above.</p>
+                                <input type="radio" name="q3" value="1" id="q3_4"><p>Covid-19 testing.</p>
                             </label>
                         </div>
                     </div>
                     <div class="quiz-item">
-                        <p>What do unit tests look like?</p>
+                        <p>What is being tested while performing system test?</p>
                         <div class="radio-container">
                             <label for="q4_1">
-                                <input type="radio" name="automated" value="0" id="q4_1"><p>Like a line of code.</p>
+                                <input type="radio" name="q4" value="0" id="q4_1"><p>Hardware.</p>
                             </label>
                             <label for="q4_2">
-                                <input type="radio" name="automated" value="0" id="q4_2"><p>Like a method.</p>
+                                <input type="radio" name="q4" value="1" id="q4_2"><p>The whole system.</p>
                             </label>
                             <label for="q4_3">
-                                <input type="radio" name="automated" value="0" id="q4_3"><p>Like a class.</p>
+                                <input type="radio" name="q4" value="0" id="q4_3"><p>Specific application.</p>
                             </label>
                             <label for="q4_4">
-                                <input type="radio" name="automated" value="1" id="q4_4"><p>Can be all of the above.</p>
+                                <input type="radio" name="q4" value="0" id="q4_4"><p>All of the above.</p>
                             </label>
                         </div>
                     </div>
                     <div class="quiz-item">
-                        <p>What do unit tests look like?</p>
+                        <p>When to perform compliance testing?</p>
                         <div class="radio-container">
                             <label for="q5_1">
-                                <input type="radio" name="compliance" value="0" id="q5_1"><p>Like a line of code.</p>
+                                <input type="radio" name="q5" value="1" id="q5_1"><p>Whenever you want.</p>
                             </label>
                             <label for="q5_2">
-                                <input type="radio" name="compliance" value="0" id="q5_2"><p>Like a method.</p>
+                                <input type="radio" name="q5" value="0" id="q5_2"><p>When computer ask to do so.</p>
                             </label>
                             <label for="q5_3">
-                                <input type="radio" name="compliance" value="0" id="q5_3"><p>Like a class.</p>
+                                <input type="radio" name="q5" value="0" id="q5_3"><p>Every four years.</p>
                             </label>
                             <label for="q5_4">
-                                <input type="radio" name="compliance" value="1" id="q5_4"><p>Can be all of the above.</p>
+                                <input type="radio" name="q5" value="0" id="q5_4"><p>Never.</p>
                             </label>
                         </div>
                     </div>
                     <div class="quiz-item">
-                        <p>What do unit tests look like?</p>
+                        <p>Who performs automated testing?</p>
                         <div class="radio-container">
                             <label for="q6_1">
-                                <input type="radio" name="extra" value="0" id="q6_1"><p>Like a line of code.</p>
+                                <input type="radio" name="q6" value="0" id="q6_1"><p>Boris Johnson.</p>
                             </label>
                             <label for="q6_2">
-                                <input type="radio" name="extra" value="0" id="q6_2"><p>Like a method.</p>
+                                <input type="radio" name="q6" value="1" id="q6_2"><p>Automated testing softare.</p>
                             </label>
                             <label for="q6_3">
-                                <input type="radio" name="extra" value="0" id="q6_3"><p>Like a class.</p>
+                                <input type="radio" name="q6" value="0" id="q6_3"><p>Human sitting in front of a computer.</p>
                             </label>
                             <label for="q6_4">
-                                <input type="radio" name="extra" value="1" id="q6_4"><p>Can be all of the above.</p>
+                                <input type="radio" name="q6" value="0" id="q6_4"><p>Donald Trump.</p>
                             </label>
                         </div>
                     </div>
                 </div>
+                <div class="btn-container">
+                    <input class="submit" type="submit" value="Submit Answers">
+                </div>
             </form>
+            <div class="results" id="results"></div>
         </div>
 
-        <button id="submit">Submit Quiz</button>
-
-        <div id="results"><p id="resultp">Result:</p></div>
     </section>
 
     <footer class="footer_wrapper">
